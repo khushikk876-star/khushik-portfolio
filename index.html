@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khushi Kumari | MBA Portfolio – Finance & Marketing</title>
+  <meta name="description" content="Premium portfolio of Khushi Kumari, MBA (Finance & Marketing) – featuring strategic internships, academic projects, certifications, campus leadership, and professional skills." />
+  <meta name="theme-color" content="#0b1e39" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --navy: #0b1e39; --navy-2: #0a1730; --muted: #b9c3d6;
+      --gold: #c9a227; --gold-2: #e1c36e;
+      --card-bg: rgba(255,255,255,0.06); --card-border: rgba(255,255,255,0.18);
+      --shadow: 0 20px 40px rgba(0,0,0,0.4); --radius: 20px; --glass-blur: 16px;
+      --maxw: 1200px; --primary: #6366f1; --accent: #06b6d4;
+    }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: radial-gradient(1200px 800px at 15% -10%, rgba(201,162,39,0.22) 0%, rgba(201,162,39,0) 60%),
+                  radial-gradient(1200px 800px at 85% 110%, rgba(99,102,241,0.2) 0%, rgba(99,102,241,0) 60%),
+                  linear-gradient(135deg, var(--navy-2), var(--navy));
+      background-attachment: fixed; color: #f7fafc; line-height: 1.5;
+    }
+    .grain { pointer-events: none; position: fixed; inset: 0; opacity: 0.08; mix-blend: overlay; background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="1.3" numOctaves="4" stitchTiles="stitch" /></filter><rect width="100%" height="100%" filter="url(%23n)" opacity=".6"/></svg>'); animation: grain 6s steps(10) infinite; z-index: -1; }
+    @keyframes grain { 0%{transform:translate(0,0)}10%{transform:translate(-3%,-2%)}20%{transform:translate(2%,-3%)}30%{transform:translate(1%,2%)}40%{transform:translate(-2%,1%)}50%{transform:translate(3%,2%)}60%{transform:translate(-1%,-2%)}70%{transform:translate(2%,-1%)}80%{transform:translate(-2%,3%)}90%{transform:translate(1%,-3%)}100%{transform:translate(0,0)}}
+    .container { width: min(var(--maxw), 92%); margin: 0 auto; }
+    .glass { background: var(--card-bg); border: 1px solid var(--card-border); backdrop-filter: blur(var(--glass-blur)); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .btn { display: inline-flex; align-items: center; gap: 10px; padding: 10px 18px; border-radius: 40px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: #f8fafc; cursor: pointer; transition: 0.2s; font-weight: 600; text-decoration: none; }
+    .btn-primary { background: linear-gradient(135deg, var(--gold), var(--gold-2)); color: #0b1220; border: none; box-shadow: 0 8px 20px rgba(201,162,39,0.3); }
+    .btn-primary:hover { filter: brightness(1.03); transform: translateY(-2px); }
+    .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(201,162,39,0.15); border: 1px solid rgba(201,162,39,0.4); border-radius: 40px; padding: 6px 16px; font-weight: 700; color: #ffe6a6; font-size: 0.8rem; }
+    .nav { position: sticky; top: 0; z-index: 100; background: rgba(9,17,33,0.6); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; flex-wrap: wrap; gap: 12px; }
+    .brand { display: flex; gap: 12px; align-items: center; font-weight: 800; }
+    .logo { width: 42px; height: 42px; background: linear-gradient(135deg, rgba(201,162,39,0.6), rgba(201,162,39,0.2)); border-radius: 12px; display: grid; place-items: center; font-weight: 800; font-size: 1.4rem; border: 1px solid rgba(255,255,255,0.25); }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a { color: #e2e8f0; font-weight: 500; transition: 0.2s; text-decoration: none; }
+    .nav-links a:hover { color: var(--gold); }
+    .mobile-menu { display: none; }
+    @media (max-width: 860px) { .nav-links { display: none; } .menu-toggle { display: inline-flex; } .mobile-open .mobile-menu { display: flex; flex-direction: column; gap: 12px; padding: 20px 0; } }
+    section { padding: 60px 0; }
+    .section-head { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px; margin-bottom: 28px; }
+    .h2 { font-size: 32px; font-weight: 800; letter-spacing: -0.02em; background: linear-gradient(135deg, #fff, var(--gold-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .hr { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); margin: 20px 0; }
+    .timeline { position: relative; padding-left: 28px; }
+    .timeline::before { content: ""; position: absolute; left: 8px; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(180deg, var(--gold), rgba(201,162,39,0.2)); }
+    .t-item { position: relative; margin: 24px 0; }
+    .t-dot { position: absolute; left: -19px; top: 12px; width: 18px; height: 18px; background: radial-gradient(circle, #ffe8a6, var(--gold)); border-radius: 50%; box-shadow: 0 0 0 4px rgba(201,162,39,0.2); }
+    .t-card { padding: 20px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; }
+    .degree { font-weight: 800; font-size: 1.2rem; }
+    .period { background: rgba(201,162,39,0.2); padding: 4px 12px; border-radius: 40px; font-size: 0.8rem; font-weight: 600; color: #ffe6a6; display: inline-block; }
+    .cards { display: flex; flex-direction: column; gap: 24px; }
+    .card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 24px; padding: 24px; transition: 0.25s; }
+    .card:hover { border-color: rgba(201,162,39,0.4); transform: translateY(-3px); }
+    .accordion-toggle { width: 100%; background: rgba(99,102,241,0.12); border: 1px solid rgba(99,102,241,0.3); border-radius: 14px; padding: 12px 16px; margin-top: 14px; display: flex; justify-content: space-between; cursor: pointer; font-weight: 700; color: #e2eafc; }
+    .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.5s cubic-bezier(0.2,0.8,0.3,1); }
+    .card.open .accordion-content { max-height: 1500px; }
+    .chev { transition: transform 0.3s; }
+    .card.open .chev { transform: rotate(180deg); }
+    .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 20px; }
+    @media (max-width: 700px) { .detail-grid { grid-template-columns: 1fr; } }
+    .pill { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 6px 14px; border-radius: 40px; font-size: 0.75rem; display: inline-block; }
+    .projects-main-grid { display: flex; flex-direction: column; gap: 48px; }
+    .project-category { margin-bottom: 20px; }
+    .project-category h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid rgba(201,162,39,0.4); display: inline-block; }
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 28px; }
+    .project-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 24px; padding: 24px; transition: 0.25s; }
+    .project-card:hover { transform: translateY(-5px); border-color: rgba(99,102,241,0.5); }
+    .card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
+    .card-top h3 { font-size: 1.3rem; font-weight: 700; }
+    .icon-box { width: 52px; height: 52px; border-radius: 16px; background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(6,182,212,0.2)); border: 1px solid rgba(255,255,255,0.1); display: grid; place-items: center; }
+    .project-icon { width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center; font-size: 1.6rem; margin-bottom: 12px; }
+    .project-icon.beardo { background: linear-gradient(135deg, #f59e0b, #ef4444); }
+    .project-icon.fevikwik { background: linear-gradient(135deg, #ef4444, #dc2626); }
+    .project-stats { display: flex; gap: 12px; margin: 16px 0; flex-wrap: wrap; }
+    .stat-item { background: rgba(255,255,255,0.04); padding: 8px 12px; border-radius: 12px; text-align: center; flex: 1; }
+    .stat-value { font-weight: 800; font-size: 1.2rem; background: linear-gradient(135deg, #fff, var(--gold)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .marketing-accordion-btn { width: 100%; background: rgba(99,102,241,0.12); border: 1px solid rgba(99,102,241,0.3); border-radius: 14px; padding: 12px 16px; margin-top: 14px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 700; color: #e2eafc; }
+    .marketing-accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
+    .project-card.open .marketing-accordion-content { max-height: 300px; }
+    .marketing-chev { transition: transform 0.3s; }
+    .project-card.open .marketing-chev { transform: rotate(180deg); }
+    .marketing-accordion-content ul { padding-left: 20px; margin-top: 12px; color: var(--muted); }
+    .marketing-accordion-content li { margin-bottom: 8px; }
+    .project-summary { color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
+    .mini-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+    .mini-tags span { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 30px; font-size: 0.7rem; font-weight: 500; }
+    details { margin-top: 8px; }
+    details summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; padding: 12px 0; font-weight: 600; color: var(--gold); border-top: 1px solid rgba(255,255,255,0.1); }
+    details summary::-webkit-details-marker { display: none; }
+    .summary-right { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: var(--muted); }
+    .arrow svg { transition: transform 0.3s; }
+    details[open] .arrow svg { transform: rotate(180deg); }
+    .detail-block { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 16px; margin-bottom: 12px; }
+    .detail-block h4 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--gold); margin-bottom: 12px; }
+    .list { padding-left: 20px; color: var(--muted); font-size: 0.85rem; line-height: 1.6; }
+    .list li { margin-bottom: 6px; }
+    .skill-list, .tool-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .skill, .tool { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 30px; font-size: 0.7rem; }
+    .certs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+    .cert-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 24px; padding: 22px; transition: 0.25s; }
+    .cert-expand-btn { background: none; border: none; color: var(--gold); font-weight: 600; margin-top: 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; }
+    .cert-expanded-details { display: none; margin-top: 14px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px; }
+    .cert-expanded-details.show { display: block; }
+    .cert-detail-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.8rem; }
+    .campus-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 20px; }
+    .campus-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 24px; padding: 24px; transition: 0.25s; }
+    .campus-card:hover { transform: translateY(-4px); border-color: rgba(201,162,39,0.4); }
+    .campus-icon { width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center; margin-bottom: 16px; font-size: 1.4rem; }
+    .campus-dropdown-toggle { width: 100%; background: rgba(99,102,241,0.12); border: 1px solid rgba(99,102,241,0.3); border-radius: 14px; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 600; color: #e2eafc; margin-top: 16px; }
+    .campus-dropdown-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .campus-dropdown-content.open { max-height: 300px; margin-top: 16px; }
+    .campus-activities { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .campus-activity-item { display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: rgba(255,255,255,0.04); border-radius: 12px; font-size: 0.8rem; }
+    .skills-categories { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; align-items: start; }
+    @media (max-width: 1100px) { .skills-categories { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 700px) { .skills-categories { grid-template-columns: 1fr; } }
+    .skill-category-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 24px; padding: 22px; height: auto; display: inline-block; width: 100%; }
+    .skill-category-header { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; font-size: 1rem; font-weight: 700; }
+    .skills-tags-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill-tag { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); padding: 8px 16px; border-radius: 40px; font-size: 0.75rem; font-weight: 500; cursor: pointer; transition: 0.2s; }
+    .skill-tag:hover { background: rgba(99,102,241,0.3); transform: translateY(-2px); border-color: var(--gold); }
+    .tooltip-card { position: fixed; background: #1a1f2e; border: 1px solid var(--gold); border-radius: 12px; padding: 12px 16px; max-width: 260px; z-index: 1000; backdrop-filter: blur(12px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); font-size: 0.75rem; line-height: 1.4; color: var(--muted); pointer-events: none; opacity: 0; transition: opacity 0.2s; }
+    .tooltip-card.show { opacity: 1; }
+    footer { background: rgba(0,0,0,0.3); border-top: 1px solid rgba(255,255,255,0.08); padding: 32px 0; text-align: center; margin-top: 20px; }
+    .animate-on-scroll { opacity: 0; transform: translateY(24px); transition: all 0.6s ease; }
+    .animate-on-scroll.animated { opacity: 1; transform: translateY(0); }
+    .mt-10 { margin-top: 10px; } .mt-12 { margin-top: 12px; } .mt-16 { margin-top: 16px; }
+    .muted { color: var(--muted); }
+    .bullet-list { padding-left: 24px; margin: 12px 0; color: var(--muted); line-height: 1.7; }
+    .bullet-list li { margin-bottom: 6px; }
+    .hero-tagline { font-size: 0.9rem; line-height: 1.5; margin-top: 8px; color: #cbd5e1; }
+  </style>
+</head>
+<body>
+<div class="grain"></div>
+<nav class="nav"><div class="container nav-inner"><div class="brand"><div class="logo">KK</div><div><div style="font-weight:800;">Khushi Kumari</div><div class="muted" style="font-size:0.8rem;">MBA · Finance & Marketing</div></div></div><div class="nav-links"><a href="#home">Home</a><a href="#education">Education</a><a href="#internships">Internships</a><a href="#projects">Projects</a><a href="#certifications">Certs</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div><div class="nav-actions"><a class="btn" href="mailto:khushikk876@gmail.com"><i class="fas fa-envelope"></i> Email</a><a class="btn btn-primary" href="https://www.linkedin.com/in/khushi-kumari-337433330/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a><button class="btn menu-toggle" id="menuToggle"><i class="fas fa-bars"></i> Menu</button></div></div><div class="container mobile-menu" id="mobileMenu"><a href="#home">Home</a><a href="#education">Education</a><a href="#internships">Internships</a><a href="#projects">Projects</a><a href="#certifications">Certs</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav>
+
+<header id="home" class="container animate-on-scroll" style="padding: 60px 0 30px;">
+  <div class="glass" style="padding:32px">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:start">
+      <div>
+        <h1 class="h2" style="font-size:52px; margin-bottom:8px">Khushi <span style="color:var(--gold)">Kumari</span></h1>
+        <div class="hero-tagline" style="font-size:0.95rem; color:#cbd5e6; margin-top:8px;">MBA Graduate from BIT Mesra (Finance & Marketing) | Internships at Mahindra & Mahindra & IIT Kharagpur | Market Research | Brand Strategy | Power BI | Digital Marketing | Financial Analysis</div>
+        <div class="hero-tagline" style="margin-top:12px;"><i class="fas fa-map-marker-alt" style="color:var(--gold); margin-right:6px;"></i> Ranchi, Jharkhand, India</div>
+        
+        <div class="mt-16"><div class="badge"><i class="fas fa-bullseye"></i> Career Objective</div><p style="margin-top:12px; color:#d1daf0; font-size:0.9rem; line-height:1.6;">To work in a professional environment where I can learn new skills, gain practical experience, and take on responsibilities. I want to contribute positively to the organization through my dedication, consistency, and willingness to improve with time.</p></div>
+        <div class="mt-16"><div class="badge"><i class="fas fa-user-astronaut"></i> Professional Summary</div><p style="margin-top:12px; color:#d1daf0; font-size:0.9rem; line-height:1.6;">An MBA graduate with academic and practical exposure across Finance, Marketing, Business Research, Customer Analytics, and Strategic Decision-Making. Experienced in customer behavior analysis, market research, business strategy development, financial evaluation, and marketing campaign planning through industry internships, academic projects, and research initiatives. Passionate about transforming data into actionable insights and contributing to business growth through analytical thinking and continuous learning.</p></div>
+        
+        <div class="mt-16" style="display:flex; gap:12px; flex-wrap:wrap;"><a class="btn btn-primary" href="#contact">Contact</a><a class="btn" href="#internships">View Internships</a></div>
+      </div>
+      <div class="glass" style="padding:24px"><div class="badge"><i class="fas fa-star"></i> Open to Opportunities</div><div class="hr" style="margin:16px 0"></div><div><i class="fas fa-envelope" style="width:24px;"></i> khushikk876@gmail.com</div><div class="mt-10"><i class="fas fa-phone-alt" style="width:24px;"></i> +91 7991126288</div><div class="mt-10"><i class="fab fa-linkedin" style="width:24px;"></i> linkedin.com/in/khushi-kumari-337433330</div><div class="mt-16"><span class="badge">MBA'26</span><span class="badge" style="margin-left:8px;">BIT Mesra</span></div></div>
+    </div>
+  </div>
+</header>
+
+<section id="education" class="container animate-on-scroll"><div class="section-head"><h2 class="h2">Education</h2></div><div class="timeline"><div class="t-item"><div class="t-dot"></div><div class="t-card"><div style="display:flex; justify-content:space-between; flex-wrap:wrap;"><div><div class="degree">MBA (Finance & Marketing)</div><div>Birla Institute of Technology (BIT Mesra)</div></div><div class="period">2024–2026</div></div><div>CGPA: <strong>8.13</strong></div></div></div><div class="t-item"><div class="t-dot"></div><div class="t-card"><div style="display:flex; justify-content:space-between;"><div><div class="degree">BA English Honours</div><div>Ranchi Women's College</div></div><div class="period">2023</div></div><div>CGPA: <strong>8.0</strong></div></div></div><div class="t-item"><div class="t-dot"></div><div class="t-card"><div style="display:flex; justify-content:space-between;"><div><div class="degree">Intermediate (Science)</div><div>SSVM Dhurwa</div></div><div class="period">2020</div></div><div>CGPA: <strong>8.4</strong></div></div></div><div class="t-item"><div class="t-dot"></div><div class="t-card"><div style="display:flex; justify-content:space-between;"><div><div class="degree">Matriculation</div><div>SSVM Dhurwa</div></div><div class="period">2018</div></div><div>CGPA: <strong>8.5</strong></div></div></div></div></section>
+
+<section id="internships" class="container animate-on-scroll"><div class="section-head"><h2 class="h2">Internships & Research</h2><div><button id="expandAllInt" class="btn">Expand All</button><button id="collapseAllInt" class="btn">Collapse All</button></div></div><div class="cards"><div class="card"><div style="display:flex; justify-content:space-between; flex-wrap:wrap;"><div><div class="degree">Sales & Marketing Intern – Nexgen Solution Technology Pvt. Ltd.</div><div class="muted">(Associated with Mahindra & Mahindra Ltd.)</div></div><div class="period">May 2025 – July 2025</div></div><div><strong>Project:</strong> Strategic Analysis of Automotive Sales and Marketing Operations</div><div class="mt-10" style="display:flex; gap:8px; flex-wrap:wrap;"><span class="pill">Customer Research</span><span class="pill">300+ Responses</span></div><button class="accordion-toggle"><span>View Key Responsibilities & Outcome</span><i class="fas fa-chevron-down chev"></i></button><div class="accordion-content"><div><ul class="bullet-list"><li>Conducted customer research to understand requirements, satisfaction levels, and dealership experience.</li><li>Collected and analyzed 300+ customer responses through surveys and feedback forms.</li><li>Evaluated customer engagement trends and promotional activity effectiveness.</li><li>Prepared reports, presentations, and visual summaries for management review.</li><li>Supported sales support activities, customer record management, and business documentation.</li><li>Coordinated with team members for data collection, reporting, and project-related activities.</li></ul><div class="detail-block mt-10"><h4>Project Outcome</h4><ul class="bullet-list"><li>Identified key customer satisfaction drivers and service improvement areas.</li><li>Generated actionable insights on customer preferences and dealership engagement.</li><li>Helped convert customer feedback into structured business recommendations.</li><li>Enhanced understanding of automotive sales processes, customer behavior, and marketing operations.</li></ul></div><div><h4>Tools Used</h4><div class="tool-list"><span class="tool">Excel</span><span class="tool">Power BI</span><span class="tool">Tableau</span></div></div></div></div></div><div class="card"><div style="display:flex; justify-content:space-between; flex-wrap:wrap;"><div><div class="degree">Research Intern – Indian Institute of Technology (IIT) Kharagpur</div></div><div class="period">Dec 2024 – Jan 2025</div></div><div><strong>Project:</strong> A Case Study on Mergers & Acquisitions by Mahindra & Mahindra Ltd.</div><div class="mt-10" style="display:flex; gap:8px; flex-wrap:wrap;"><span class="pill">M&A Research</span><span class="pill">20+ Deals</span><span class="pill">Financial Evaluation</span></div><button class="accordion-toggle"><span>View Key Responsibilities & Outcome</span><i class="fas fa-chevron-down chev"></i></button><div class="accordion-content"><div><ul class="bullet-list"><li>Conducted secondary research on mergers, acquisitions, and corporate growth strategies.</li><li>Analyzed 20+ M&A transactions undertaken by Mahindra & Mahindra.</li><li>Collected financial, market, and industry data from annual reports, research papers, and databases.</li><li>Assisted in comparative analysis of acquisition performance and strategic outcomes.</li><li>Prepared research notes, analytical summaries, and presentation materials.</li><li>Evaluated business expansion, diversification, and competitive positioning strategies.</li></ul><div class="detail-block mt-10"><h4>Project Outcome</h4><ul class="bullet-list"><li>Assessed the strategic rationale behind major acquisitions.</li><li>Identified potential synergy benefits and long-term business impact.</li><li>Evaluated how acquisitions contributed to market expansion and competitive advantage.</li><li>Strengthened understanding of corporate finance, business strategy, valuation concepts, and M&A decision-making.</li></ul></div><div><h4>Tools Used</h4><div class="tool-list"><span class="tool">Excel</span><span class="tool">Prowess</span><span class="tool">ACE Equity</span><span class="tool">Bloomberg Terminal</span></div></div></div></div></div></div></section>
+
+<section id="projects" class="container animate-on-scroll"><div class="section-head"><h2 class="h2">Academic Projects</h2><div class="badge">Finance & Marketing</div></div><div class="projects-main-grid"><div class="project-category"><h3><i class="fas fa-chart-line" style="margin-right:10px;"></i> Finance Projects</h3><div class="projects-grid"><div class="project-card"><div class="card-top"><div><h3>Portfolio Performance Evaluation</h3></div><div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 19H20M7 16V10M12 16V5M17 16V12" stroke="#ffffff" stroke-width="2.2"/></svg></div></div><p class="project-summary">Simulated investment portfolio of ₹10 lakh to understand asset allocation, diversification, and risk-return optimization.</p><div class="mini-tags"><span>Financial Analysis</span><span>Portfolio Management</span><span>Risk Assessment</span></div><details><summary><span>View Project Details</span><span class="summary-right">Expand <span class="arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2.2"/></svg></span></span></summary><div class="detail-grid"><div><div class="detail-block"><h4>Methodology</h4><ul class="list"><li>Allocated 60% Equity, 25% Bonds, 15% Government Securities</li><li>Financial ratio analysis & trend evaluation</li><li>Asset performance comparison under different market conditions</li></ul></div></div><div><div class="detail-block"><h4>Key Findings</h4><ul class="list"><li>Diversification reduces overall investment risk</li><li>Equity offers higher returns with volatility</li><li>Fixed-income securities provide stability</li></ul></div><div class="detail-block"><h4>Tools</h4><div class="tool-list"><span class="tool">Excel</span><span class="tool">Bloomberg</span><span class="tool">ACE Equity</span></div></div></div></div></details></div><div class="project-card"><div class="card-top"><div><h3>KASY Notes Business Plan</h3></div><div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 7C4 5.89543 4.89543 5 6 5H14L20 11V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V7Z" stroke="#ffffff" stroke-width="2.1"/><path d="M14 5V11H20" stroke="#ffffff" stroke-width="2.1"/></svg></div></div><p class="project-summary">Complete business plan for a digital academic platform where former students can upload notes for current students.</p><div class="mini-tags"><span>Business Planning</span><span>Market Research</span><span>Financial Forecasting</span></div><details><summary><span>View Project Details</span><span class="summary-right">Expand <span class="arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2.2"/></svg></span></span></summary><div class="detail-grid"><div><div class="detail-block"><h4>Methodology</h4><ul class="list"><li>Market research & competitor analysis for app launch</li><li>Developed cost sheets and revenue generation models</li><li>Marketing analysis to launch the business plan successfully</li><li>Created financial projections and growth strategies</li></ul></div></div><div><div class="detail-block"><h4>Outcome</h4><ul class="list"><li>Scalable EdTech business model</li><li>Institutional partnership potential identified</li><li>Clear revenue generation opportunities</li></ul></div><div class="detail-block"><h4>Tools</h4><div class="tool-list"><span class="tool">Excel</span><span class="tool">Canva</span><span class="tool">Business Model Canvas</span></div></div></div></div></details></div></div></div><div class="project-category"><h3><i class="fas fa-chart-simple" style="margin-right:10px;"></i> Marketing Projects</h3><div class="projects-grid"><div class="project-card"><div class="project-icon beardo"><i class="fas fa-beard"></i></div><h3>Beardo IMC Campaign Strategy</h3><p class="project-summary">Integrated Marketing Communication campaign for brand awareness & digital engagement.</p><div class="project-stats"><div class="stat-item"><div class="stat-value">₹10Cr</div><div>Budget</div></div><div class="stat-item"><div class="stat-value">30%</div><div>Sales growth</div></div></div><button class="marketing-accordion-btn">Objectives & Insights <i class="fas fa-chevron-down marketing-chev"></i></button><div class="marketing-accordion-content"><ul class="bullet-list"><li>Enhance brand visibility & digital engagement</li><li>Influencer-led campaigns boost reach significantly</li><li>Skills: Digital Marketing, IMC, Brand Management</li></ul></div><div class="mt-10"><span class="pill">Canva</span><span class="pill">Social Media Analytics</span><span class="pill">Excel</span></div></div><div class="project-card"><div class="project-icon fevikwik"><i class="fas fa-droplet"></i></div><h3>Fevikwik Marketing Analysis</h3><p class="project-summary">STP, PLC analysis and market leadership evaluation.</p><div class="project-stats"><div class="stat-item"><div class="stat-value">72%</div><div>Market share</div></div><div class="stat-item"><div class="stat-value">30M+</div><div>Ad views</div></div></div><button class="marketing-accordion-btn">Research & Insights <i class="fas fa-chevron-down marketing-chev"></i></button><div class="marketing-accordion-content"><ul class="bullet-list"><li>Rural expansion drove 14% growth</li><li>Viral campaigns generated high engagement</li><li>Skills: Marketing Analysis, Consumer Research, Strategic Thinking</li></ul></div><div class="mt-10"><span class="pill">Excel</span><span class="pill">STP/PLC Frameworks</span><span class="pill">Secondary Research</span></div></div></div></div></div></section>
+
+<section id="certifications" class="container animate-on-scroll"><div class="section-head"><h2 class="h2">Certifications</h2></div><div class="certs-grid"><div class="cert-card"><i class="fas fa-bullhorn" style="font-size:2rem; color:var(--gold)"></i><h3 class="mt-12">Digital Marketing</h3><p>IIDE – Instagram, content strategy</p><button class="cert-expand-btn">View Details <i class="fas fa-arrow-right"></i></button><div class="cert-expanded-details"><div class="cert-detail-list"><span>Instagram Marketing</span><span>Content Strategy</span><span>Campaign Design</span><span>Audience Targeting</span></div></div></div><div class="cert-card"><i class="fab fa-linkedin" style="font-size:2rem; color:#0ea5e9"></i><h3 class="mt-12">Marketing Analytics</h3><p>LinkedIn Learning – ROI, metrics</p><button class="cert-expand-btn">View Details</button><div class="cert-expanded-details"><div class="cert-detail-list"><span>Campaign Analysis</span><span>Marketing Metrics</span><span>Customer Analytics</span></div></div></div><div class="cert-card"><i class="fas fa-chart-pie" style="font-size:2rem; color:#f59e0b"></i><h3 class="mt-12">Power BI</h3><p>Microsoft – Dashboards & Visualization</p><button class="cert-expand-btn">View Details</button><div class="cert-expanded-details"><div class="cert-detail-list"><span>Dashboard Dev</span><span>KPI Tracking</span><span>Data Visualization</span></div></div></div><div class="cert-card"><i class="fas fa-calculator" style="font-size:2rem; color:#10b981"></i><h3 class="mt-12">Tally 9.0</h3><p>Tally Solutions – Accounting</p><button class="cert-expand-btn">View Details</button><div class="cert-expanded-details"><div class="cert-detail-list"><span>Ledger Creation</span><span>Financial Statements</span><span>Voucher Entry</span></div></div></div></div></section>
+
+<section id="campus" class="container animate-on-scroll"><div class="section-head"><h2 class="h2">Campus Leadership & Clubs</h2><div class="badge">Involvement</div></div><div class="campus-grid"><div class="campus-card"><div class="campus-icon" style="background:#6366f1;"><i class="fas fa-star"></i></div><h3>Student Activity Council</h3><p>SAC Member · Event coordination & campus leadership</p><button class="campus-dropdown-toggle" onclick="toggleCampus(this)">View roles <i class="fas fa-chevron-down"></i></button><div class="campus-dropdown-content"><div class="campus-activities"><div class="campus-activity-item"><i class="fas fa-calendar-alt"></i> Event Planning</div><div class="campus-activity-item"><i class="fas fa-users"></i> Student Engagement</div><div class="campus-activity-item"><i class="fas fa-flag"></i> Campus Participation</div><div class="campus-activity-item"><i class="fas fa-handshake"></i> Team Collaboration</div></div></div></div><div class="campus-card"><div class="campus-icon" style="background:#06b6d4;"><i class="fas fa-chart-line"></i></div><h3>Finance Club</h3><p>Active Member · Market discussions & business analysis</p><button class="campus-dropdown-toggle" onclick="toggleCampus(this)">View activities <i class="fas fa-chevron-down"></i></button><div class="campus-dropdown-content"><div class="campus-activities"><div class="campus-activity-item"><i class="fas fa-coins"></i> Investment concepts</div><div class="campus-activity-item"><i class="fas fa-trending-up"></i> Business analysis</div><div class="campus-activity-item"><i class="fas fa-brain"></i> Analytical discussions</div><div class="campus-activity-item"><i class="fas fa-chart-simple"></i> Market research</div></div></div></div></div></section>
+
+<section id="skills" class="container animate-on-scroll"><div class="section-head"><h2 class="h2">Skills & Expertise</h2><div class="badge">Hover / Click on any skill</div></div><div class="skills-categories"><div class="skill-category-card"><div class="skill-category-header"><i class="fas fa-laptop-code"></i> Technical Skills</div><div class="skills-tags-grid"><span class="skill-tag" data-desc="MS Office Suite: Advanced proficiency in Word, Excel, PowerPoint, Outlook for documentation and analysis.">MS Office Suite</span><span class="skill-tag" data-desc="Advanced Excel: Pivot tables, VLOOKUP, financial modeling, data cleaning.">Advanced Excel</span><span class="skill-tag" data-desc="Power BI: Interactive dashboards, KPI reporting, data visualization.">Power BI</span><span class="skill-tag" data-desc="Tableau: Data visualization and business intelligence.">Tableau</span><span class="skill-tag" data-desc="Tally 9.0: Accounting, ledgers, financial statements.">Tally 9.0</span><span class="skill-tag" data-desc="Prowess: CMIE database for corporate financial analysis.">Prowess</span><span class="skill-tag" data-desc="Bloomberg Terminal: Equity research, real-time market data.">Bloomberg Terminal</span><span class="skill-tag" data-desc="ACE Equity: Stock market and mutual fund research platform.">ACE Equity</span><span class="skill-tag" data-desc="Google Workspace: Docs, Sheets, Slides, Drive for collaboration.">Google Workspace</span><span class="skill-tag" data-desc="ChatGPT & AI Research: AI-assisted research, content generation.">ChatGPT & AI Research</span><span class="skill-tag" data-desc="Google Ads: Campaign setup, keyword research.">Google Ads</span><span class="skill-tag" data-desc="HubSpot: CRM, marketing automation basics.">HubSpot</span><span class="skill-tag" data-desc="A/B Testing: Experiment design, hypothesis testing, conversion optimization.">A/B Testing</span><span class="skill-tag" data-desc="Canva: Marketing collateral, social media design.">Canva</span></div></div><div class="skill-category-card"><div class="skill-category-header"><i class="fas fa-magnifying-glass-chart"></i> Analytical Skills</div><div class="skills-tags-grid"><span class="skill-tag" data-desc="Financial Analysis: Ratios, statements, investment research.">Financial Analysis</span><span class="skill-tag" data-desc="Market Research: Primary/secondary research, competitor insights.">Market Research</span><span class="skill-tag" data-desc="Strategic Analysis: STP, PLC, BCG matrix, strategic frameworks.">Strategic Analysis</span><span class="skill-tag" data-desc="Risk Management: Risk identification and mitigation strategies.">Risk Management</span><span class="skill-tag" data-desc="Business Report Writing: Structured reports, executive summaries.">Business Report Writing</span><span class="skill-tag" data-desc="Consumer Insight Analysis: Behavior analysis, segmentation.">Consumer Insight Analysis</span><span class="skill-tag" data-desc="Brand Marketing Analysis: Brand positioning, equity evaluation.">Brand Marketing Analysis</span><span class="skill-tag" data-desc="Business Communication: Clear, effective professional communication.">Business Communication</span><span class="skill-tag" data-desc="Strategic Thinking: Long-term planning, competitive strategy.">Strategic Thinking</span></div></div><div class="skill-category-card"><div class="skill-category-header"><i class="fas fa-robot"></i> AI & Digital</div><div class="skills-tags-grid"><span class="skill-tag" data-desc="GenAI: LLMs, content generation, creative AI applications.">GenAI</span><span class="skill-tag" data-desc="Prompt Engineering: Advanced prompting for ChatGPT, Claude.">Prompt Engineering</span><span class="skill-tag" data-desc="AI Tools: ChatGPT, Gemini, Copilot for productivity.">AI Tools</span></div></div><div class="skill-category-card"><div class="skill-category-header"><i class="fas fa-handshake"></i> Professional Skills</div><div class="skills-tags-grid"><span class="skill-tag" data-desc="Communication: Verbal, written, presentations, client interaction.">Communication</span><span class="skill-tag" data-desc="Teamwork: Collaborative projects, group dynamics.">Teamwork</span><span class="skill-tag" data-desc="Leadership: SAC member, event coordination, student leadership.">Leadership</span><span class="skill-tag" data-desc="Critical Thinking: Objective analysis, logical reasoning.">Critical Thinking</span><span class="skill-tag" data-desc="Problem Solving: Root cause analysis, solution generation.">Problem Solving</span><span class="skill-tag" data-desc="Decision Making: Data-driven choices, strategic decisions.">Decision Making</span><span class="skill-tag" data-desc="Attention to Detail: Precision, thoroughness in work.">Attention to Detail</span><span class="skill-tag" data-desc="Learning Agility: Quick adaptation to new tools and concepts.">Learning Agility</span><span class="skill-tag" data-desc="Collaboration: Cross-functional teamwork, shared goals.">Collaboration</span><span class="skill-tag" data-desc="Responsibility & Accountability: Ownership of tasks, reliable.">Responsibility & Accountability</span></div></div></div></section>
+
+<section id="contact" class="container animate-on-scroll"><div class="glass" style="padding:28px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px;"><div><h2 class="h2">Let's connect</h2><p>Open to Finance, Marketing, Strategy & Analytics roles.</p><div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:12px;"><a href="mailto:khushikk876@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> khushikk876@gmail.com</a><a href="tel:+917991126288" class="btn"><i class="fas fa-phone"></i> +91 7991126288</a><a href="https://www.linkedin.com/in/khushi-kumari-337433330/" target="_blank" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a></div></div><div class="badge"><i class="fas fa-check-circle"></i> Available for interviews</div></div></section>
+
+<footer><div class="container"><div>© 2025 Khushi Kumari — All rights reserved</div><div class="muted mt-12">MBA Portfolio · Finance & Marketing Strategist</div></div></footer>
+
+<div id="skillTooltip" class="tooltip-card"></div>
+
+<script>
+  // Accordion toggles
+  document.querySelectorAll('.accordion-toggle').forEach(btn => { btn.addEventListener('click', function() { this.closest('.card').classList.toggle('open'); }); });
+  document.getElementById('expandAllInt')?.addEventListener('click', () => document.querySelectorAll('.card').forEach(c => c.classList.add('open')));
+  document.getElementById('collapseAllInt')?.addEventListener('click', () => document.querySelectorAll('.card').forEach(c => c.classList.remove('open')));
+  
+  // Marketing project accordion
+  document.querySelectorAll('.marketing-accordion-btn').forEach(btn => { btn.addEventListener('click', function() { this.closest('.project-card').classList.toggle('open'); }); });
+  
+  // Certification expand
+  document.querySelectorAll('.cert-expand-btn').forEach(btn => { btn.addEventListener('click', function() { const details = this.nextElementSibling; details.classList.toggle('show'); this.innerHTML = details.classList.contains('show') ? 'Hide Details <i class="fas fa-arrow-up"></i>' : 'View Details <i class="fas fa-arrow-right"></i>'; }); });
+  
+  // Campus dropdown
+  window.toggleCampus = function(btn) { const content = btn.nextElementSibling; content.classList.toggle('open'); const icon = btn.querySelector('i'); if(icon) icon.classList.toggle('fa-chevron-down'); if(icon) icon.classList.toggle('fa-chevron-up'); };
+  
+  // Skill tooltip interactive
+  const tooltip = document.getElementById('skillTooltip');
+  document.querySelectorAll('.skill-tag').forEach(tag => {
+    tag.addEventListener('mouseenter', (e) => {
+      const desc = tag.getAttribute('data-desc');
+      if(desc) {
+        tooltip.innerHTML = desc;
+        tooltip.style.left = e.pageX + 15 + 'px';
+        tooltip.style.top = e.pageY - 30 + 'px';
+        tooltip.classList.add('show');
+      }
+    });
+    tag.addEventListener('mouseleave', () => { tooltip.classList.remove('show'); });
+    tag.addEventListener('mousemove', (e) => {
+      tooltip.style.left = e.pageX + 15 + 'px';
+      tooltip.style.top = e.pageY - 30 + 'px';
+    });
+  });
+  
+  // Mobile menu
+  const menuToggle = document.getElementById('menuToggle'); if(menuToggle) menuToggle.addEventListener('click', () => document.querySelector('.nav').classList.toggle('mobile-open'));
+  
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('animated'); }); }, { threshold: 0.1 });
+  document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
